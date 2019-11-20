@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#box {
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.bg {
+		background: yellow;
+	}
+
+	.black {
+		color: black;
+	}
+
+	.grey {
+		color: grey;
+	}
+</style>
+</head>
+<body>
+	<input type="text" id="setext">
+	<input type="button" value="搜索" id="btn">
+	<script>
+		var btn = document.getElementById('btn');
+		var setext = document.getElementById('setext');
+		setext.onfocus = function () {
+			if (setext.value === '请输入关键字') {
+				setext.value = '';
+				setext.className = 'black';
+			} 
+		}
+		setext.onblur = function () {
+			if (setext.value === '') {
+				setext.value = '请输入关键字';
+				setext.className = 'grey';
+			}
+		}
+	</script>
+
+
+	
+</body>
+</html>

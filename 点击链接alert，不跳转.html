@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#box {
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<a id="link" href="www.baidu.com">百度</a>
+	<script>
+		var link = document.getElementById('link');
+		link.onclick = function () {
+			alert('别点我');
+			return false;
+		}
+	</script>
+	
+</body>
+</html>

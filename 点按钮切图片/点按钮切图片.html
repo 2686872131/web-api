@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#box {
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+</style>
+</head>
+<body>
+	<input type="button" value="点我" id="btn">
+	<br>
+	<div>
+		<img src="老乔.png" alt="" id="mv">
+	</div>
+	<script>
+		var btn = document.getElementById('btn');
+		var flag = 0;
+		btn.onclick = function () {
+			var box = document.getElementById('box');
+			var mv = document.getElementById('mv');
+			if (flag === 0) {
+				mv.src = '范海伦.png';
+				flag = 1;
+			} else {
+				mv.src = '老乔.png';
+				flag = 0;
+			}
+
+		}
+
+		
+	</script>
+	
+</body>
+</html>
